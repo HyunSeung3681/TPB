@@ -76,4 +76,5 @@ async def on_message(message) :
     	await message.channel.send(message.author.mention + " 착한말^^")
     	channel = discord.utils.get(message.guild.text_channels, name="tpb-로그")
     	await channel.send(message.author.mention+" 님이 욕설을 사용하셨습니다. 욕설 내용 : "+message.content)
-app.run('NjgxNjg5ODg3Mzg0MjcyOTM0.XlT9hg.CnrGSnjXoMelXFFOo6ulyG6WG2g')
+access_token=os.environ["BOT_TOKEN"]
+app.run(access_token)
