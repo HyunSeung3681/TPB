@@ -19,7 +19,7 @@ async def on_ready():
 async def on_message(message) :
     if message.author.bot:
         return None
-	if '테스트', '테스트1', '테스트22' in message.content:
+    if '테스트', '테스트1', '테스트22' in message.content:
         await message.delete()
         await message.channel.send(f'{message.author.mention}님은 욕설(비속어)를 사용하여 메세지가 삭제되었습니다.')
         embed = discord.Embed(title=f'비속어 감지',description=f'메세지 작성인 : {message.author.mention}\n감지된 비속어 : {message.content}\n메세지 감지 채널 : {message.channel.mention}',colour=message.author.colour)
