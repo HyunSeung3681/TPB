@@ -5,7 +5,8 @@ import random
 import os
 
 app = discord.Client()
-token = "NjYzNTYwNTA3MjMxNTY3ODkz.Xhh6rg.eUtDlH71cXI5ARGyjIuhn17Ag_s"
+access_token=os.environ["TOKEN"]
+token = access_token
 
 @app.event
 async def on_ready():
