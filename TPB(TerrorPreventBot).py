@@ -1,7 +1,5 @@
 ﻿import asyncio
 import discord
-import time
-import random
 import os
 
 app = discord.Client()
