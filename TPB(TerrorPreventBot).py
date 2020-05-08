@@ -14,6 +14,7 @@ async def on_ready():
     print("=============")
 
     await app.change_presence(activity=discord.Game(name="욕(채팅) 필터링", type=0))
+    
 @app.event
 async def on_message(message) :
     if message.author.bot:
