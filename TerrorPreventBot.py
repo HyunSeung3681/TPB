@@ -20,7 +20,12 @@ async def on_ready():
 async def on_message(message) :
     if message.author.bot:
         return None
-    if "ㅁ" in message.content and "ㅊ" in message.content:
+    if "시" in message.content and "발" in message.content:
+    	await message.delete()
+    	await message.channel.send(f"{message.author.mention} 착한말^^")
+    	channel = discord.utils.get(message.guild.text_channels, name="📃tpb-로그")
+    	await channel.send(f"{message.author.mention}님이 욕설을 사용하셨습니다.\n사용 욕설 : ㅁㅊ\n메시지 내용 : {message.content}")
+    if "ㅅ" in message.content and "ㅂ" in message.content:
     	await message.delete()
     	await message.channel.send(f"{message.author.mention} 착한말^^")
     	channel = discord.utils.get(message.guild.text_channels, name="📃tpb-로그")
