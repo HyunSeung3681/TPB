@@ -27,7 +27,7 @@ async def on_message(message) :
     if message.content == "t-핑":
         await message.channel.send(f":ping_pong: 퐁! 현재 핑은 {app.latency}초입니다!")
     if message.content == "t-도움":
-        await message.channel.send("아직 만들고 있답니다 ")
+        await message.channel.send("아직 만들고 있답니다")
 
 access_token=os.environ["BOT_TOKEN"]
 app.run(access_token)
