@@ -16,7 +16,7 @@ async def on_ready():
 async def on_message(message) :
     if message.author.bot:
         return None
-    if "ㅁㅊ" in message.content:
+    if "ㅁ" in message.content and "ㅊ" in message.content:
     	await message.delete()
     	await message.channel.send(f"{message.author.mention} 착한말^^")
     	channel = discord.utils.get(message.guild.text_channels, name="tpb-로그")
