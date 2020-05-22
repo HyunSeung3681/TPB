@@ -18,7 +18,7 @@ async def on_message(message) :
         return None
     if "ㅁㅊ" in message.content:
     	await message.delete()
-    	await message.channel.send(message.author.mention + " 착한말^^")
+    	await message.channel.send(f"{message.author.mention} 착한말^^")
     	channel = discord.utils.get(message.guild.text_channels, name="tpb-로그")
     	await channel.send(f"{message.author.mention}님이 욕설을 사용하셨습니다.\n사용 욕설 : ㅁㅊ\n메시지 내용 : {message.content}")
 
