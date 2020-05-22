@@ -1,1 +1,1 @@
-worker: python TPB(TerrorPreventBot).py
+worker: python TerrorPreventBot.py
